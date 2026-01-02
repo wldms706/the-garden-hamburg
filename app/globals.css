@@ -1,12 +1,15 @@
 @import "tailwindcss";
 
 :root {
-  --background: #FAFAF8;
-  --foreground: #2C2C2C;
-  --primary: #8B9D83;
-  --primary-dark: #5D6E56;
-  --accent: #D4C5B0;
-  --cream: #F5F1EB;
+  --background: #F8FAF6;
+  --foreground: #2D3E2C;
+  --primary: #7C9473;
+  --primary-dark: #4A6B4D;
+  --accent: #C8D5B9;
+  --cream: #F4F7F0;
+  --leaf: #9BB88D;
+  --sage: #A8BFA0;
+  --moss: #5F7A61;
 }
 
 @theme inline {
@@ -16,6 +19,9 @@
   --color-primary-dark: var(--primary-dark);
   --color-accent: var(--accent);
   --color-cream: var(--cream);
+  --color-leaf: var(--leaf);
+  --color-sage: var(--sage);
+  --color-moss: var(--moss);
 }
 
 body {
@@ -30,4 +36,40 @@ body {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+/* Botanical decorative elements */
+.leaf-accent::before {
+  content: '🌿';
+  opacity: 0.15;
+  font-size: 3rem;
+  position: absolute;
+  top: -1rem;
+  left: -1rem;
+}
+
+.leaf-accent::after {
+  content: '🍃';
+  opacity: 0.1;
+  font-size: 2.5rem;
+  position: absolute;
+  bottom: -0.5rem;
+  right: -0.5rem;
+}
+
+/* Garden-themed gradient backgrounds */
+.garden-gradient {
+  background: linear-gradient(135deg, #A8BFA0 0%, #7C9473 50%, #5F7A61 100%);
+}
+
+.botanical-pattern {
+  background-image:
+    radial-gradient(circle at 20% 50%, rgba(155, 184, 141, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 80% 80%, rgba(124, 148, 115, 0.1) 0%, transparent 50%);
+}
+
+/* Leaf border decoration */
+.leaf-border {
+  border: 2px solid #C8D5B9;
+  border-image: linear-gradient(45deg, #A8BFA0, #7C9473, #A8BFA0) 1;
 }
