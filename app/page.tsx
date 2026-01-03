@@ -12,14 +12,13 @@ export default function Home() {
     const motionQuery = window.matchMedia('(prefers-reduced-motion: reduce)');
     setPrefersReducedMotion(motionQuery.matches);
 
-    // Check if device is mobile (screen width < 768px)
-    const isMobile = window.innerWidth < 768;
-    setShouldShowGif(!isMobile && !motionQuery.matches);
+    // Show GIF on all devices unless user prefers reduced motion
+    setShouldShowGif(!motionQuery.matches);
 
     // Listen for motion preference changes
     const handleMotionChange = (e: MediaQueryListEvent) => {
       setPrefersReducedMotion(e.matches);
-      setShouldShowGif(!isMobile && !e.matches);
+      setShouldShowGif(!e.matches);
     };
 
     motionQuery.addEventListener('change', handleMotionChange);
@@ -30,15 +29,18 @@ export default function Home() {
     <div className="min-h-screen">
       {/* Hero Section */}
       <section className="relative h-[80vh] flex items-center justify-center overflow-hidden">
-        {/* Background - GIF for desktop, gradient for mobile/reduced-motion */}
+        {/* Background - Video for all devices, gradient for reduced-motion */}
         {shouldShowGif ? (
           <div className="absolute inset-0">
-            <img
-              src="/hero-background.gif"
-              alt=""
+            <video
+              autoPlay
+              loop
+              muted
+              playsInline
               className="w-full h-full object-cover"
-              loading="eager"
-            />
+            >
+              <source src="/hero-background.mp4" type="video/mp4" />
+            </video>
             <div className="absolute inset-0 bg-primary-dark/60"></div>
           </div>
         ) : (
