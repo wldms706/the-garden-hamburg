@@ -48,14 +48,14 @@ export default function Home() {
         )}
 
         <div className="relative text-center text-white px-6 max-w-5xl mx-auto z-10">
-          <h1 className="text-7xl md:text-9xl font-light tracking-[0.25em] mb-10">
-            THE GARDEN
+          <h1 className="text-8xl md:text-9xl font-light tracking-[0.2em] mb-10 italic" style={{ fontFamily: 'var(--font-playfair)' }}>
+            The Garden
           </h1>
-          <div className="h-[1px] w-20 bg-white/30 mx-auto mb-10"></div>
-          <p className="text-2xl md:text-3xl font-light mb-4 tracking-wide">
+          <div className="h-[1px] w-24 bg-white/40 mx-auto mb-10"></div>
+          <p className="text-2xl md:text-3xl font-light mb-4 tracking-wider" style={{ fontFamily: 'var(--font-cormorant)' }}>
             Korean Hair & Beauty
           </p>
-          <p className="text-lg md:text-xl opacity-80 font-light tracking-wide">
+          <p className="text-lg md:text-xl opacity-85 font-light tracking-wide" style={{ fontFamily: 'var(--font-cormorant)' }}>
             Hamburg
           </p>
         </div>
@@ -71,18 +71,18 @@ export default function Home() {
                 <div className="absolute inset-0 bg-primary/40 group-hover:bg-primary/50 transition-all duration-300"></div>
                 <div className="absolute inset-0 flex items-center justify-center text-white">
                   <div className="text-center">
-                    <h2 className="text-6xl font-light tracking-[0.15em] mb-2">HAIR</h2>
+                    <h2 className="text-6xl font-light tracking-[0.1em] mb-2 italic" style={{ fontFamily: 'var(--font-playfair)' }}>Hair</h2>
                     <p className="text-base font-light opacity-90 tracking-wide">헤어</p>
                   </div>
                 </div>
               </div>
               <div className="p-10">
-                <h3 className="text-2xl font-light mb-4 tracking-wide text-foreground">Hair</h3>
-                <p className="text-gray-500 leading-relaxed mb-6 text-sm">
+                <h3 className="text-2xl font-light mb-4 tracking-wide text-foreground" style={{ fontFamily: 'var(--font-playfair)' }}>Hair</h3>
+                <p className="text-gray-500 leading-relaxed mb-6 text-sm" style={{ fontFamily: 'var(--font-cormorant)' }}>
                   Korean style haircuts, perms & colors<br />
                   한국식 컷, 펌, 염색
                 </p>
-                <p className="text-primary-dark text-xs font-medium tracking-widest uppercase">
+                <p className="text-primary-dark text-xs font-medium tracking-widest uppercase" style={{ fontFamily: 'var(--font-cormorant)' }}>
                   View More →
                 </p>
               </div>
@@ -96,18 +96,18 @@ export default function Home() {
                 <div className="absolute inset-0 bg-soft-green/40 group-hover:bg-soft-green/50 transition-all duration-300"></div>
                 <div className="absolute inset-0 flex items-center justify-center text-white">
                   <div className="text-center">
-                    <h2 className="text-6xl font-light tracking-[0.15em] mb-2">BEAUTY</h2>
+                    <h2 className="text-6xl font-light tracking-[0.1em] mb-2 italic" style={{ fontFamily: 'var(--font-playfair)' }}>Beauty</h2>
                     <p className="text-base font-light opacity-90 tracking-wide">뷰티</p>
                   </div>
                 </div>
               </div>
               <div className="p-10">
-                <h3 className="text-2xl font-light mb-4 tracking-wide text-foreground">Beauty</h3>
-                <p className="text-gray-500 leading-relaxed mb-6 text-sm">
+                <h3 className="text-2xl font-light mb-4 tracking-wide text-foreground" style={{ fontFamily: 'var(--font-playfair)' }}>Beauty</h3>
+                <p className="text-gray-500 leading-relaxed mb-6 text-sm" style={{ fontFamily: 'var(--font-cormorant)' }}>
                   Lash & PMU K-Beauty Designer<br />
                   래쉬 & 반영구 화장
                 </p>
-                <p className="text-primary-dark text-xs font-medium tracking-widest uppercase">
+                <p className="text-primary-dark text-xs font-medium tracking-widest uppercase" style={{ fontFamily: 'var(--font-cormorant)' }}>
                   View More →
                 </p>
               </div>
@@ -121,18 +121,18 @@ export default function Home() {
                 <div className="absolute inset-0 bg-deep-green/40 group-hover:bg-deep-green/50 transition-all duration-300"></div>
                 <div className="absolute inset-0 flex items-center justify-center text-white">
                   <div className="text-center">
-                    <h2 className="text-6xl font-light tracking-[0.15em] mb-2">ACADEMY</h2>
+                    <h2 className="text-6xl font-light tracking-[0.1em] mb-2 italic" style={{ fontFamily: 'var(--font-playfair)' }}>Academy</h2>
                     <p className="text-base font-light opacity-90 tracking-wide">아카데미</p>
                   </div>
                 </div>
               </div>
               <div className="p-10">
-                <h3 className="text-2xl font-light mb-4 tracking-wide text-foreground">Academy</h3>
-                <p className="text-gray-500 leading-relaxed mb-6 text-sm">
+                <h3 className="text-2xl font-light mb-4 tracking-wide text-foreground" style={{ fontFamily: 'var(--font-playfair)' }}>Academy</h3>
+                <p className="text-gray-500 leading-relaxed mb-6 text-sm" style={{ fontFamily: 'var(--font-cormorant)' }}>
                   K-Beauty Training (Lash & PMU)<br />
                   K-뷰티 교육 (래쉬 & 반영구)
                 </p>
-                <p className="text-primary-dark text-xs font-medium tracking-widest uppercase">
+                <p className="text-primary-dark text-xs font-medium tracking-widest uppercase" style={{ fontFamily: 'var(--font-cormorant)' }}>
                   View More →
                 </p>
               </div>
