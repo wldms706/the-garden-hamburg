@@ -1,63 +1,29 @@
 'use client';
 
 import Link from "next/link";
-import { useState, useEffect } from "react";
 
 export default function Home() {
-  const [shouldShowGif, setShouldShowGif] = useState(false);
-  const [prefersReducedMotion, setPrefersReducedMotion] = useState(false);
-
-  useEffect(() => {
-    // Check if user prefers reduced motion
-    const motionQuery = window.matchMedia('(prefers-reduced-motion: reduce)');
-    setPrefersReducedMotion(motionQuery.matches);
-
-    // Show GIF on all devices unless user prefers reduced motion
-    setShouldShowGif(!motionQuery.matches);
-
-    // Listen for motion preference changes
-    const handleMotionChange = (e: MediaQueryListEvent) => {
-      setPrefersReducedMotion(e.matches);
-      setShouldShowGif(!e.matches);
-    };
-
-    motionQuery.addEventListener('change', handleMotionChange);
-    return () => motionQuery.removeEventListener('change', handleMotionChange);
-  }, []);
-
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
       <section className="relative h-[80vh] flex items-center justify-center overflow-hidden">
-        {/* Background - Video for all devices, gradient for reduced-motion */}
-        {shouldShowGif ? (
-          <div className="absolute inset-0">
-            <video
-              autoPlay
-              loop
-              muted
-              playsInline
-              className="w-full h-full object-cover"
-            >
-              <source src="/hero-background.mp4" type="video/mp4" />
-            </video>
-            <div className="absolute inset-0 bg-black/50"></div>
-          </div>
-        ) : (
-          <div className="absolute inset-0 bg-gradient-to-br from-primary-dark via-primary to-soft-green">
-            <div className="absolute inset-0 subtle-texture"></div>
-          </div>
-        )}
+        {/* Beautiful Green and Beige Gradient Background */}
+        <div className="absolute inset-0 bg-gradient-to-br from-[#8B9D7C] via-[#A8B899] to-[#E8DCC4]">
+          <div className="absolute inset-0 subtle-texture"></div>
+          {/* Decorative Elements */}
+          <div className="absolute top-20 left-10 w-32 h-32 rounded-full bg-white/10 blur-3xl"></div>
+          <div className="absolute bottom-32 right-20 w-40 h-40 rounded-full bg-[#D4C5B0]/20 blur-3xl"></div>
+        </div>
 
-        <div className="relative text-center text-white px-6 max-w-5xl mx-auto z-10">
-          <h1 className="text-8xl md:text-9xl font-light tracking-[0.2em] mb-10 italic" style={{ fontFamily: 'var(--font-playfair)' }}>
+        <div className="relative text-center px-6 max-w-5xl mx-auto z-10">
+          <h1 className="text-8xl md:text-9xl font-light tracking-[0.2em] mb-10 italic text-white drop-shadow-lg" style={{ fontFamily: 'var(--font-playfair)' }}>
             The Garden
           </h1>
-          <div className="h-[1px] w-24 bg-white/40 mx-auto mb-10"></div>
-          <p className="text-2xl md:text-3xl font-light mb-4 tracking-wider" style={{ fontFamily: 'var(--font-cormorant)' }}>
+          <div className="h-[1px] w-24 bg-white/60 mx-auto mb-10"></div>
+          <p className="text-2xl md:text-3xl font-light mb-4 tracking-wider text-white/95 drop-shadow" style={{ fontFamily: 'var(--font-cormorant)' }}>
             Korean Hair & Beauty
           </p>
-          <p className="text-lg md:text-xl opacity-85 font-light tracking-wide" style={{ fontFamily: 'var(--font-cormorant)' }}>
+          <p className="text-lg md:text-xl font-light tracking-wide text-white/90 drop-shadow" style={{ fontFamily: 'var(--font-cormorant)' }}>
             Hamburg
           </p>
         </div>
