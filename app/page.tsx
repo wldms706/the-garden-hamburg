@@ -7,23 +7,24 @@ export default function Home() {
     <div className="min-h-screen">
       {/* Hero Section */}
       <section className="relative h-[80vh] flex items-center justify-center overflow-hidden">
-        {/* Beautiful Green and Beige Gradient Background */}
-        <div className="absolute inset-0 bg-gradient-to-br from-[#8B9D7C] via-[#A8B899] to-[#E8DCC4]">
+        {/* Luxurious Green and Beige Gradient Background */}
+        <div className="absolute inset-0 bg-gradient-to-br from-[#6B7C5D] via-[#8B9D7C] to-[#A8B899]">
           <div className="absolute inset-0 subtle-texture"></div>
-          {/* Decorative Elements */}
-          <div className="absolute top-20 left-10 w-32 h-32 rounded-full bg-white/10 blur-3xl"></div>
-          <div className="absolute bottom-32 right-20 w-40 h-40 rounded-full bg-[#D4C5B0]/20 blur-3xl"></div>
+          {/* Elegant Decorative Elements */}
+          <div className="absolute top-20 left-10 w-40 h-40 rounded-full bg-[#E8DCC4]/10 blur-3xl"></div>
+          <div className="absolute bottom-32 right-20 w-48 h-48 rounded-full bg-[#D4C5B0]/15 blur-3xl"></div>
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 rounded-full bg-white/5 blur-3xl"></div>
         </div>
 
         <div className="relative text-center px-6 max-w-5xl mx-auto z-10">
-          <h1 className="text-8xl md:text-9xl font-light tracking-[0.2em] mb-10 italic text-white drop-shadow-lg" style={{ fontFamily: 'var(--font-playfair)' }}>
+          <h1 className="text-8xl md:text-9xl font-light tracking-[0.25em] mb-12 italic text-[#F5EFE6] drop-shadow-2xl" style={{ fontFamily: 'var(--font-playfair)' }}>
             The Garden
           </h1>
-          <div className="h-[1px] w-24 bg-white/60 mx-auto mb-10"></div>
-          <p className="text-2xl md:text-3xl font-light mb-4 tracking-wider text-white/95 drop-shadow" style={{ fontFamily: 'var(--font-cormorant)' }}>
+          <div className="h-[2px] w-32 bg-gradient-to-r from-transparent via-[#E8DCC4] to-transparent mx-auto mb-12"></div>
+          <p className="text-2xl md:text-3xl font-light mb-5 tracking-[0.15em] text-[#E8DCC4] drop-shadow-lg" style={{ fontFamily: 'var(--font-cormorant)' }}>
             Korean Hair & Beauty
           </p>
-          <p className="text-lg md:text-xl font-light tracking-wide text-white/90 drop-shadow" style={{ fontFamily: 'var(--font-cormorant)' }}>
+          <p className="text-lg md:text-xl font-light tracking-[0.2em] text-[#D4C5B0] drop-shadow-md" style={{ fontFamily: 'var(--font-cormorant)' }}>
             Hamburg
           </p>
         </div>
